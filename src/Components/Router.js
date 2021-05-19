@@ -6,13 +6,15 @@ import Header from "./Header";
 
 const Router = () => (
   <BrowserRouter>
-    <Header></Header>
-    <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/tv" exact component={TV} />
-      <Route path="/search" component={Search} />
-      <Redirect from="*" to="/"></Redirect>
-    </Switch>
+    <>
+      <Header></Header>
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/tv" exact component={TV} />
+        <Route path="/search" component={Search} />
+        <Redirect from="*" to="/"></Redirect>
+      </Switch>
+    </>
   </BrowserRouter>
 );
 
